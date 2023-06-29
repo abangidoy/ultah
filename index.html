@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Fitri Salsabila</title>
+  <link rel="icon" href="kue.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="text.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="h3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <style>
+    .hide-gif {
+      display: none !important;
+    }
+    
+    .animated-image {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 700px;
+      height: 700px;
+      overflow: hidden;
+      z-index: 9999;
+    }
+    
+    .animated-image img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      animation: float 4s infinite linear;
+    }
+    
+    .animated-image h2 {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 32px;
+      text-align: center;
+      color: #e94d05;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    @keyframes float {
+      0% {
+        transform: translate(0, 0);
+      }
+      50% {
+        transform: translate(0, -10px);
+      }
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+  </style>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      VANTA.BIRDS({
+        el: "#vanta",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        colorMode: "variance",
+        birdSize: 1.6,
+        quantity: 3.0,
+        backgroundAlpha: 0.0,
+        color1: 0x708c07,
+        color2: 0xeaff82
+      });
+      setTimeout(() => {
+        document.querySelector("#").style.opacity = 1;
+        document.querySelector("#").style.filter = "none";
+      }, 1000);
+    });
+  </script>
+</head>
+
+<body>
+  <div id="vanta"></div>
+  <nav class="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="https://syah.tipalsyah.repl.co/">Matahari gua🌻</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="bi bi-segmented-nav"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#section1" class="menu1"><i class="bi bi-journal-plus"></i> Ucapan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2"><i class="bi bi-image-fill"></i> Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3"><i class="bi bi-envelope-fill"></i> Pesan</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <audio id="background-music" autoplay>
+    <source src="musik.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="animated-image">
+    <img src="image/gif.gif" alt="Gambar Bergerak">
+    <h2>HI SALSA</h2>
+  </div>
+
+  <section id="section1" class="menu">
+    <div class="book-container">
+      <div class="book">
+        <div class="book-cover">
+          <div class="front-cover"></div>
+          <div class="back-cover"></div>
+        </div>
+        <div class="book-content">
+          <h2><span class="typing-text">Happy Birthday Salsa</span></h2>
+          <p class="animate__animated animate__fadeInUp">
+            Selamat ulang tahun, sahabat perempuanku yang tercinta! Aku ingin kamu tahu betapa istimewanya kamu bagiku. Kamu adalah sumber kebahagiaanku, inspirasiku, dan seseorang yang selalu membuatku merasa lengkap.
+
+Dalam setiap momen yang kita bagi bersama, kamu telah membawa cahaya dan kehangatan dalam hidupku. Kamu adalah sahabat yang selalu mendengarkan, memahami, dan memberikan dukungan tanpa batas. Terima kasih karena telah menjadi bagian tak terpisahkan dari hidupku.
+
+Pada hari ulang tahunmu ini, aku berjanji untuk terus hadir di sampingmu, menjaga dan merawat hubungan persahabatan kita. Aku akan selalu ada untukmu, di saat senang maupun sedih, di dalam setiap langkah perjalananmu.
+
+Semoga tahun ini menjadi awal dari petualangan baru yang luar biasa, penuh dengan cinta, kebahagiaan, dan keberhasilan yang tak terbatas. Aku percaya kamu memiliki potensi yang luar biasa, dan aku akan selalu mendukungmu untuk meraih semua impianmu.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section><br></br>
+
+  <section id="section2" class="menu">
+    <div class="gallery">
+      <div class="gallery-item nature">
+        <div class="image-container">
+          <img src="image/1.jpg" alt="Gambar 1">
+          <div class="overlay">
+            <div class="text"></div>
+            <button class="bi bi-balloon-heart transparent-button"></button>
+          </div>
+        </div>
+        <div class="modal">
+          <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img src="image/1.jpg" alt="Gambar 1">
+            <div class="text">Pertama kali pap ya sa mode mau nyuci baju tuh gini hehe</div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item food">
+        <div class="image-container">
+          <img src="image/2.jpg" alt="Gambar 2">
+          <div class="overlay">
+            <div class="text"></div>
+            <button class="bi bi-balloon-heart transparent-button"></button>
+          </div>
+        </div>
+        <div class="modal">
+          <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img src="image/2.jpg" alt="Gambar 2">
+            <div class="text">Mode kondangan pagi-pagi udah liat setengah muka</div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item animals">
+        <div class="image-container">
+          <img src="image/3.jpeg" alt="Gambar 3">
+          <div class="overlay">
+            <div class="text"></div>
+            <button class="bi bi-balloon-heart transparent-button"></button>
+          </div>
+        </div>
+        <div class="modal">
+          <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img src="image/3.jpeg" alt="Gambar 3">
+            <div class="text">Foto yang di liatin sekali liat 2 bulan lalu, sering-sering geh kasih pap kaya gini biar nambah semangat</div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item nature">
+        <div class="image-container">
+          <img src="image/4.jpg" alt="Gambar 4">
+          <div class="overlay">
+            <div class="text"></div>
+            <button class="bi bi-balloon-heart transparent-button"></button>
+          </div>
+        </div>
+        <div class="modal">
+          <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img src="image/4.jpg" alt="Gambar 4">
+            <div class="text">Mode imut tapi lu bilang keliatan pendek</div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item food">
+        <div class="image-container">
+          <img src="image/5.jpg" alt="Gambar 5">
+          <div class="overlay">
+            <div class="text"></div>
+            <button class="bi bi-balloon-heart transparent-button"></button>
+          </div>
+        </div>
+        <div class="modal">
+          <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img src="image/5.jpg" alt="Gambar 5">
+            <div class="text">Ini versi full dari foto ke 2 komen cuman setengah muka wkwk</div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item animals">
+        <div class="image-container">
+          <img src="image/7.jpg" alt="Gambar 6">
+          <div class="overlay">
+            <div class="text"></div>
+            <button class="bi bi-balloon-heart transparent-button"></button>
+          </div>
+        </div>
+        <div class="modal">
+          <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img src="image/7.jpg" alt="Gambar 6">
+            <div class="text">Ini si yang paling adem dari awal liat sampe sekarang</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="section3" class="menu">
+    <form>
+      <div class="question">
+        <h2>Andai kita punya hubungan yang spesial, hubungan itu mau yang kaya apa sa?</h2>
+        <textarea id="answer1" rows="4" placeholder="Tulis jawabanmu di sini"></textarea>
+      </div>
+      
+      <div class="question">
+        <h2>Kalo kita punya hubungan tempat mana yang bakal di kunjungin pertama kali?</h2>
+        <textarea id="answer2" rows="4" placeholder="Tulis jawabanmu di sini"></textarea>
+      </div>
+      
+      <div class="question">
+        <h2>Kasih nilai dong buat website ini?</h2>
+        <textarea id="answer3" rows="4" placeholder="Tulis jawabanmu di sini" inputmode="numeric" oninput="validateNumberInput(this)"></textarea>
+      </div>
+      
+      <!-- Tambahkan pertanyaan lainnya di sini -->
+      
+      <button type="button" class="wa" onclick="validateAndSendToWhatsApp()">Kirim</button>
+    </form>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="js.js"></script>
+</body>
+</html>

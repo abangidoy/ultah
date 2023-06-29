@@ -1,0 +1,49 @@
+#section3 {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .question {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  
+  .wa {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .wa:hover {
+    background-color: #707070;
+  }
+  
+  /* Responsiveness for mobile devices */
+  @media only screen and (max-width: 480px) {
+    #section3 {
+      padding: 10px;
+    }
+  
+    h2 {
+      font-size: 16px;
+    }
+  }
+  
